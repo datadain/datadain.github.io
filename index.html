@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datadain - Building the next frontier</title>
+    <!-- Tailwind CSS por CDN: La magia sin compilar -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons por CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Pequeño ajuste para la fuente y la selección de texto */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        ::selection {
+            background-color: rgba(16, 185, 129, 0.3); /* emerald-500/30 */
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-950 text-gray-200 antialiased relative selection:bg-emerald-500/30">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 top-0 bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold tracking-tighter text-white flex items-center gap-2">
+                <i data-lucide="cpu" class="text-emerald-500 w-6 h-6"></i>
+                Datadain
+            </div>
+            <a href="mailto:hello@datadain.com" class="hidden md:inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 px-5 py-2 rounded-full font-semibold transition-all duration-300">
+                <i data-lucide="mail" class="w-4 h-4"></i>
+                Contacto
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 px-6 overflow-hidden">
+        <!-- Luz de fondo borrosa (Efecto bacán) -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-emerald-900/20 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+        
+        <div class="max-w-5xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-6">
+                Building the <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">next frontier</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed">
+                Software optimizado que soluciona problemas reales, consumiendo la mínima cantidad de recursos posibles.
+            </p>
+            <a href="mailto:hello@datadain.com" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-gray-950 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_-5px_rgba(16,185,129,0.4)]">
+                Hablemos del futuro
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Vision Section -->
+    <section class="py-24 bg-gray-900 border-y border-gray-800 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+                        Tecnología que respeta <br /> nuestro entorno.
+                    </h2>
+                    <p class="text-lg text-gray-400 leading-relaxed mb-6">
+                        En Datadain tenemos una misión clara: crear soluciones de software sustentables y amigables con el medio ambiente. Creemos firmemente que la tecnología no debe costar el planeta.
+                    </p>
+                    <p class="text-lg text-gray-400 leading-relaxed">
+                        Todos nuestros servicios están forjados en <strong class="text-emerald-400 font-semibold">Rust</strong>. Al utilizar el lenguaje con menor huella de memoria y capacidad de cómputo, reducimos drásticamente el uso de servidores, el consumo de agua para refrigeración y el extractivismo masivo.
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 flex flex-col items-start gap-4 hover:border-emerald-500/50 transition-colors">
+                        <div class="p-3 bg-emerald-500/10 rounded-xl">
+                            <i data-lucide="cpu" class="w-6 h-6 text-emerald-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white mb-1">Ultra Eficiente</h3>
+                            <p class="text-sm text-gray-500">Mínimo uso de CPU y RAM gracias a Rust.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 flex flex-col items-start gap-4 hover:border-emerald-500/50 transition-colors">
+                        <div class="p-3 bg-emerald-500/10 rounded-xl">
+                            <i data-lucide="droplet" class="w-6 h-6 text-emerald-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white mb-1">Eco-Friendly</h3>
+                            <p class="text-sm text-gray-500">Reducción del consumo de agua en Data Centers.</p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-950 p-6 rounded-2xl border border-gray-800 flex flex-col items-start gap-4 hover:border-emerald-500/50 transition-colors col-span-2">
+                        <div class="p-3 bg-emerald-500/10 rounded-xl">
+                            <i data-lucide="leaf" class="w-6 h-6 text-emerald-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-white mb-1">Anti-Extractivismo</h3>
+                            <p class="text-sm text-gray-500">Al requerir menos hardware, combatimos la obsolescencia programada y la extracción masiva de minerales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-24 px-6 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Nuestros Proyectos</h2>
+                <p class="text-xl text-gray-400">Herramientas creadas para resolver problemas reales.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Project 1: Floorsay (Linkeable) -->
+                <a href="https://floorsay.com" target="_blank" rel="noopener noreferrer" class="group block bg-gray-900 p-8 rounded-3xl border border-gray-800 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-emerald-500/50">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-gray-950 w-16 h-16 rounded-2xl flex items-center justify-center border border-gray-800 group-hover:border-emerald-500/50 transition-colors">
+                            <i data-lucide="building" class="w-8 h-8 text-emerald-400"></i>
+                        </div>
+                        <span class="text-xs font-mono px-3 py-1 rounded-full border border-gray-700/50 text-gray-400 bg-gray-950/50 group-hover:border-emerald-500/30 group-hover:text-emerald-400 transition-colors">
+                            Abril 2026
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                        Floorsay
+                        <i data-lucide="external-link" class="w-5 h-5 text-emerald-400 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Califica tu edificio. Transparencia y comunidad para mejorar el lugar donde vives.
+                    </p>
+                </a>
+
+                <!-- Project 2: Backend Arena -->
+                <div class="group bg-gray-900 p-8 rounded-3xl border border-gray-800 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-gray-950 w-16 h-16 rounded-2xl flex items-center justify-center border border-gray-800 group-hover:border-emerald-500/50 transition-colors">
+                            <i data-lucide="bar-chart-3" class="w-8 h-8 text-emerald-400"></i>
+                        </div>
+                        <span class="text-xs font-mono px-3 py-1 rounded-full border border-gray-700/50 text-gray-400 bg-gray-950/50 group-hover:border-emerald-500/30 group-hover:text-emerald-400 transition-colors">
+                            Mayo 2026
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                        Backend Arena
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        La plataforma definitiva de benchmarks de frameworks. Datos duros para decisiones técnicas.
+                    </p>
+                </div>
+
+                <!-- Project 3: Cobol Killer -->
+                <div class="group bg-gray-900 p-8 rounded-3xl border border-gray-800 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-gray-950 w-16 h-16 rounded-2xl flex items-center justify-center border border-gray-800 group-hover:border-emerald-500/50 transition-colors">
+                            <i data-lucide="terminal" class="w-8 h-8 text-emerald-400"></i>
+                        </div>
+                        <span class="text-xs font-mono px-3 py-1 rounded-full border border-gray-700/50 text-gray-400 bg-gray-950/50 group-hover:border-emerald-500/30 group-hover:text-emerald-400 transition-colors">
+                            Próximamente 2026
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                        Cobol Killer
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Intérprete de COBOL a Rust. Moderniza sistemas legacy con rendimiento y seguridad del siglo XXI.
+                    </p>
+                </div>
+
+                <!-- Project 4: Not Alone -->
+                <div class="group bg-gray-900 p-8 rounded-3xl border border-gray-800 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-gray-950 w-16 h-16 rounded-2xl flex items-center justify-center border border-gray-800 group-hover:border-emerald-500/50 transition-colors">
+                            <i data-lucide="message-square" class="w-8 h-8 text-emerald-400"></i>
+                        </div>
+                        <span class="text-xs font-mono px-3 py-1 rounded-full border border-gray-700/50 text-gray-400 bg-gray-950/50 group-hover:border-emerald-500/30 group-hover:text-emerald-400 transition-colors">
+                            Próximamente 2026
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                        Not Alone
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Plataforma de chat optimizada para conectar personas que se sienten solas.
+                    </p>
+                </div>
+
+                <!-- Project 5: Hand please -->
+                <div class="group bg-gray-900 p-8 rounded-3xl border border-gray-800 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="flex justify-between items-start mb-6">
+                        <div class="bg-gray-950 w-16 h-16 rounded-2xl flex items-center justify-center border border-gray-800 group-hover:border-emerald-500/50 transition-colors">
+                            <i data-lucide="users" class="w-8 h-8 text-emerald-400"></i>
+                        </div>
+                        <span class="text-xs font-mono px-3 py-1 rounded-full border border-gray-700/50 text-gray-400 bg-gray-950/50 group-hover:border-emerald-500/30 group-hover:text-emerald-400 transition-colors">
+                            Próximamente 2026
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 flex items-center gap-2">
+                        Hand please
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        Plataforma de servicios de personas. Encuentra el servicio que necesitas y ofrece el tuyo.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-24 bg-gradient-to-b from-gray-900 to-gray-950 px-6 border-t border-gray-800">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center justify-center p-4 bg-emerald-500/10 rounded-full mb-6">
+                <i data-lucide="code-2" class="w-10 h-10 text-emerald-400"></i>
+            </div>
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Consultoría y Desarrollo</h2>
+            <p class="text-xl text-gray-400 mb-10 leading-relaxed">
+                Además de nuestros productos, llevamos la filosofía de Datadain a tu empresa. Desarrollamos software a medida, hiper-optimizado y escalable. Si tienes un problema complejo, nosotros lo resolvemos escribiendo código que tu hardware ni siquiera va a sentir.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <div class="flex items-center gap-3 text-gray-300 bg-gray-900 px-6 py-3 rounded-xl border border-gray-800">
+                    <i data-lucide="zap" class="text-emerald-400 w-5 h-5"></i> Arquitectura de Sistemas
+                </div>
+                <div class="flex items-center gap-3 text-gray-300 bg-gray-900 px-6 py-3 rounded-xl border border-gray-800">
+                    <i data-lucide="zap" class="text-emerald-400 w-5 h-5"></i> Migración a Rust
+                </div>
+                <div class="flex items-center gap-3 text-gray-300 bg-gray-900 px-6 py-3 rounded-xl border border-gray-800">
+                    <i data-lucide="zap" class="text-emerald-400 w-5 h-5"></i> Auditoría de Rendimiento
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / Footer -->
+    <footer class="py-16 border-t border-gray-800 px-6 bg-gray-950">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <div class="text-2xl font-bold tracking-tighter text-white flex items-center justify-center md:justify-start gap-2 mb-2">
+                    <i data-lucide="cpu" class="text-emerald-500 w-6 h-6"></i>
+                    Datadain
+                </div>
+                <p class="text-gray-500">Building the next frontier.</p>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row items-center gap-6">
+                <a href="mailto:hello@datadain.com" class="text-gray-400 hover:text-emerald-400 transition-colors flex items-center gap-2">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    hello@datadain.com
+                </a>
+                <a href="mailto:hello@datadain.com" class="bg-white hover:bg-gray-200 text-gray-950 px-6 py-2 rounded-full font-bold transition-all duration-300">
+                    Iniciar un proyecto
+                </a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-16 text-center text-sm text-gray-600">
+            © 2026 Datadain. Todos los derechos reservados. Desarrollado con pasión y bajísimo consumo de RAM.
+        </div>
+    </footer>
+
+    <!-- Script para renderizar los iconos de Lucide -->
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
